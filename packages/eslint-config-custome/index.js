@@ -18,11 +18,12 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {
-    indent: ["error", "tab"],
+    indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
     "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-unused-vars": "error"
   },
   ignorePatterns: ["node_modules", "dist", "build"],
 };
