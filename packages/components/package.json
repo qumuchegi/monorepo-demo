@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint-config-custome": "workspace:^"
+    "eslint-config-custome": "workspace:^",
+    "prettier-custome": "workspace:^"
   },
   "eslintConfig": {
     "root": true,
-    "extends": ["custome"]
+    "extends": [
+      "custome"
+    ]
   }
 }

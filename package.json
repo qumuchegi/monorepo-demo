@@ -35,14 +35,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "custome"
-    ]
-  },
   "lint-staged": {
-    "packages/**/*.{ts,tsx,js,jsx}": "eslint --fix",
-    "apps/**/*.{ts,tsx,js,jsx}": "eslint --fix"
+    "packages/components/**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write ."
+    ],
+    "apps/www/**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write ."
+    ]
   }
 }

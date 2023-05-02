@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "devconfig": "workspace:^",
-    "eslint-config-custome": "workspace:^"
+    "eslint-config-custome": "workspace:^",
+    "prettier-custome": "workspace:^"
   },
   "eslintConfig": {
     "root": true,
