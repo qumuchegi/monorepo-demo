@@ -42,6 +42,7 @@
     ]
   },
   "lint-staged": {
-    "apps/www/src/**/*.{ts,tsx,js,jsx}": "eslint --fix"
+    "packages/**/*.{ts,tsx,js,jsx}": "eslint --fix",
+    "apps/**/*.{ts,tsx,js,jsx}": "eslint --fix"
   }
 }
