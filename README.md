@@ -4,6 +4,40 @@ monorepo 实践
 
 pnpm workspace + swc(编译 ts、react) + webpack(构建、打包)
 
+目录结构：
+```code
+.
+├── README.md
+├── apps
+│   └── www
+│       ├── package.json
+│       ├── public
+│       │   └── index.html
+│       ├── src
+│       │   ├── index.scss
+│       │   └── index.tsx
+│       └── webpack.config.js
+├── package.json
+├── packages
+│   ├── components
+│   │   ├── Button
+│   │   │   └── index.tsx
+│   │   ├── index.tsx
+│   │   └── package.json
+│   ├── devConfig
+│   │   ├── common.webpack.config.js
+│   │   ├── index.js
+│   │   └── package.json
+│   ├── eslint-config-custome
+│   │   ├── index.js
+│   │   └── package.json
+│   └── prettier-custome
+│       ├── index.js
+│       └── package.json
+├── pnpm-lock.yaml
+└── pnpm-workspace.yaml
+```
+
 ## 其他
 
 开发：

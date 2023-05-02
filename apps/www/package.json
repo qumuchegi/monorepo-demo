@@ -16,7 +16,6 @@
     "components": "workspace:^"
   },
   "devDependencies": {
-    "devconfig": "workspace:^",
     "eslint-config-custome": "workspace:^",
     "prettier-custome": "workspace:^"
   },

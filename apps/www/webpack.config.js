@@ -1,5 +1,5 @@
 const path = require("path");
-const webpack = require("webpack");
+// const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
@@ -18,6 +18,10 @@ module.exports = {
   devtool: "source-map",
   devServer: {
     static: "./dist",
+    port: 3000,
+    client: {
+      progress: true,
+    },
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js"],
@@ -59,7 +63,6 @@ module.exports = {
       title: "Development",
       template: path.resolve(__dirname, "./public/index.html"),
     }),
-    // new ESLintPlugin()
   ],
   optimization: {
     minimize: true,
