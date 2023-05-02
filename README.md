@@ -1,11 +1,10 @@
 monorepo 实践
 
 ## 工具链
-
-pnpm workspace + swc(编译 ts、react) + webpack(构建、打包)
+作为轻量化的 monorepo 实践，所需要的是：pnpm workspace + swc(编译 ts、react) + webpack(构建、打包)
 
 目录结构：
-```code
+```yaml
 .
 ├── README.md
 ├── apps
@@ -24,10 +23,6 @@ pnpm workspace + swc(编译 ts、react) + webpack(构建、打包)
 │   │   │   └── index.tsx
 │   │   ├── index.tsx
 │   │   └── package.json
-│   ├── devConfig
-│   │   ├── common.webpack.config.js
-│   │   ├── index.js
-│   │   └── package.json
 │   ├── eslint-config-custome
 │   │   ├── index.js
 │   │   └── package.json
@@ -37,6 +32,17 @@ pnpm workspace + swc(编译 ts、react) + webpack(构建、打包)
 ├── pnpm-lock.yaml
 └── pnpm-workspace.yaml
 ```
+
+文件 pnpm-workspace.yaml 定义了 pnpm workspace 也就是包：
+
+```yaml
+packages:
+  - "apps/*"
+  - "packages/*"
+```
+
+包 www 依赖 包 components 和包 eslint-config-custome、prettier-custome，www 通过 pnpm “软连接” 的方式 “安装” 其他的包。
+
 
 ## 其他
 
