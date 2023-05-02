@@ -23,7 +23,7 @@ module.exports = {
     quotes: ["error", "double"],
     semi: ["error", "always"],
     "@typescript-eslint/no-var-requires": "off",
-    "@typescript-eslint/no-unused-vars": "error"
+    "@typescript-eslint/no-unused-vars": "error",
   },
   ignorePatterns: ["node_modules", "dist", "build"],
 };
