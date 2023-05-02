@@ -11,11 +11,13 @@ const y2 = 0;
 const y3 = 0;
 const y4 = 0;
 
-function App(){
-	return <div>
-		<h1 className='title'>www</h1>
-		<Button/>
-	</div>;
+function App() {
+  return (
+    <div>
+      <h1 className="title">www</h1>
+      <Button />
+    </div>
+  );
 }
 
 const domNode = document.getElementById("root");

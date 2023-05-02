@@ -1,3 +1,3 @@
 module.exports = {
-    ...require('prettier-custome'),
-}
+  ...require("prettier-custome"),
+};
